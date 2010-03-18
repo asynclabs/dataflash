@@ -2,7 +2,9 @@
 
 int lastpage=0; //last page written to
 int pages=25; //total pages that will be used
-Dataflash dflash; 
+
+#define FLASH_SLAVE_SELECT 7
+#define WIFI_SLAVE_SELECT  10
 
 void setup()
 {
@@ -10,7 +12,7 @@ void setup()
   Serial.print('h',BYTE);
   Serial.print('i',BYTE);
   Serial.print('\n',BYTE);//debug
-  dflash.init(); //initialize the memory (pins are defined in dataflash.cpp
+  dflash.init(WIFI_SLAVE_SELECT); //initialize the memory (pins are defined in dataflash.cpp
 }
 
 void loop()

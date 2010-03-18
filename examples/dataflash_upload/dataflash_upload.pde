@@ -1,11 +1,12 @@
 #include <dataflash.h>
 
-Dataflash dflash; 
+#define FLASH_SLAVE_SELECT 7
+#define WIFI_SLAVE_SELECT  10
 
 void setup()
 {
   Serial.begin(115200);
-  dflash.init(); //initialize the memory (pins are defined in dataflash.cpp
+  dflash.init(WIFI_SLAVE_SELECT); //initialize the memory (pins are defined in dataflash.cpp
 }
 
 void loop()
