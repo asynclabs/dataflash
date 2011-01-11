@@ -1,1 +1,16 @@
-future home of AsyncLabs dataflash library.
+DataFlash library for the FlashShield 1.0 devices
+
+Async Labs Inc.
+www.asynclabs.com
+
+-------------------------------------------------------------------------------
+Version 1.0.0
+-------------------------------------------------------------------------------
+Features:
+- Provides a basic set of APIs to access the Atmel AT45DB161D DataFlash device
+  on the FlashShield 1.0
+- Provides a sample application which demonstrates the use of the DataFlash
+  library to write, store and read data on the DataFlash device
+
+Known issues:
+None
